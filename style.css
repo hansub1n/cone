@@ -1,0 +1,104 @@
+/* 이서윤체 폰트 적용을 위한 코드 */
+@font-face {
+    font-family: "LeeSeoyun";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+    format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+      
+/* body태그 자체에 css 요소 부여 */
+body {
+	font-family: "LeeSeoyun";
+	margin: 0;
+	display: flex; /* 유연하게 */
+	justify-content: center; /* 가운데 정렬 */
+	background-image: url("./background.png");
+}
+
+.container {
+    width: 390px; /* 390px 핸드폰 너비와 비슷 */
+    background-color: #ff9d73;
+    height: 100%;
+}
+
+.photo {
+    margin-top: 30px;
+}
+
+.photo-frame {
+    background-color: white;
+    margin: 15px 20px;
+    height: 200px;
+
+    background-size: cover;
+    position: relative;
+
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.f-title {
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.f-date {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#image1 {
+    background-image: url('./img1.png');
+}
+
+#image2 {
+    background-image: url('./img2.png');
+}
+
+#image3 {
+    background-image: url('./img3.png');
+}
+
+#image4 {
+    background-image: url('./img4.png');
+}
+
+.photo-description {
+    color: white;
+    background-color: black;
+
+    width: fit-content; /* 안에 있는 글자 수에 너비를 맞춰라 */
+    padding: 0 20px;
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+
+    transform: translate(-50%);
+    left: 50%;
+
+    opacity: 0;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+}
+
+.showText {
+    opacity: 1;
+}
+
+.hideText {
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
