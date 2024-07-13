@@ -11,6 +11,8 @@ function showText(number) {
     } else {
       document.querySelector("#desc3").classList.remove("hideText");
       document.querySelector("#desc3").classList.add("showText");
+      document.querySelector("#desc3").classList.add("showText");
+
     }
   }
   
